@@ -5,10 +5,15 @@
 <div class="jumbotron">
     <br>
     <h1 class="display-4">Hello, {{current_user.nama}}!</h1>
-    <p class="lead">Selamat Datang di Sistem Informasi Pengaduan, semoga psegala pengaduan anda menjadi perbaikan kami.
+    <p class="lead">Selamat Datang di Sistem Informasi dari Perusahaan kami, Jika ada kekurangan dari website yang kami
+        buat silahkan pergi ke <a href="{{url_for('rmahasiswa.pengaduan')}}">Pengaduan</a> dan juga jika anda ingin
+        pergi ke Informasi surat maka silahkan pergi ke <a href="{{url_for('rmahasiswa.pendataansurat')}}">Pendataan
+            Surat</a> Untuk melihat informasi tersebut. Terimakasih</a></a>
     </p>
     <hr class="my-4">
-    <p>Klik untuk memulai pengaduan anda.</p>
-    <a class="btn btn-warning btn-lg" href="{{url_for('rmahasiswa.pengaduan')}}" role="button">Pengaduan</a>
+    <p>Klik untuk memulai pengaduan anda</p>
+    <a class="btn btn-warning btn-lg" href="{{url_for('rmahasiswa.pengaduan')}}" role="button">Pengaduan</a> <br>
+    <p>Klik untuk melihat pendataan surat </p>
+    <a class="btn btn-warning btn-lg" href="{{url_for('rmahasiswa.pendataansurat')}}" role="button">Pengaduan</a>
 </div>
 {% endblock %}
